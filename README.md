@@ -22,12 +22,12 @@
 
 ## Team Information
 
-| Login | Role
+| Login | Role | Secondary Role |
 |---|---|---|
-| alribeyr | PM | DEV |
-| gvalogne | TL | DEV |
-| ctravers | PO | DEV |
-| artperez | DEV |
+| alribeyr | PM  | DEV |
+| gvalogne | TL  | DEV |
+| ctravers | PO  | DEV |
+| artperez | DEV | |
 
 ---
 
@@ -192,35 +192,35 @@ docker compose build --no-cache && docker compose up
 
 ## Features List
 
-| Feature | Description
-|---|---|---|
-| User registration & login | Email + password auth, bcrypt-hashed passwords, JWT tokens
-| Profile management | Edit username, email, bio, avatar, banner
-| Password reset | Email-based reset with expiring JWT token
-| Posts | Create (with image + game tag), edit, delete, view feed
-| Likes & comments | Like/unlike posts, comment thread per post
-| Follow / unfollow | Follow users, view followers/following lists
-| Block / unblock | Block users, removes follow relationship both ways
-| User search | Search by username or display name from the navbar
-| Explore page | Discover posts and users
-| Real-time chat | 1-on-1 private messages via WebSocket, read receipts
-| Live notifications | Follow, like, comment, message events via WebSocket
-| Game tagging | Attach a game to a post via RAWG public API search
-| Image uploads | Avatar, banner, and post images stored on disk
-| Dark / light theme | Toggle persisted in localStorage
-| Privacy Policy & Terms | Accessible pages with real content, linked in footer
-| Account deletion | Hard delete with full cascade cleanup
-| Additional browser support | Chrome + Firefox compatibility
+| Feature | Description |
+|---|---|
+| User registration & login | Email + password auth, bcrypt-hashed passwords, JWT tokens |
+| Profile management | Edit username, email, bio, avatar, banner |
+| Password reset | Email-based reset with expiring JWT token |
+| Posts | Create (with image + game tag), edit, delete, view feed |
+| Likes & comments | Like/unlike posts, comment thread per post |
+| Follow / unfollow | Follow users, view followers/following lists |
+| Block / unblock | Block users, removes follow relationship both ways |
+| User search | Search by username or display name from the navbar |
+| Explore page | Discover posts and users |
+| Real-time chat | 1-on-1 private messages via WebSocket, read receipts |
+| Live notifications | Follow, like, comment, message events via WebSocket |
+| Game tagging | Attach a game to a post via RAWG public API search |
+| Image uploads | Avatar, banner, and post images stored on disk |
+| Dark / light theme | Toggle persisted in localStorage |
+| Privacy Policy & Terms | Accessible pages with real content, linked in footer |
+| Account deletion | Hard delete with full cascade cleanup |
+| Additional browser support | Chrome + Firefox compatibility |
 
 ---
 
 ## Modules
 
 | Module | Type | Points |
-|---|---|---|---|---|
+|---|---|---|
 | Both sides framework | Major | 2 |
-| Frontend framework (Vue.js) | Minor | 1 | Full SPA using Vue 3 + Vite + Pinia
-| Backend framework (FastAPI) | Minor | 1 | REST + WebSocket API with FastAPI
+| Frontend framework (Vue.js, Full SPA using Vue 3 + Vite + Pinia) | Minor | 1 | 
+| Backend framework (FastAPI, REST + WebSocket API with FastAPI) | Minor | 1 | 
 | WebSockets (chat + notifications) | Major | 2 |
 | User interactions (follow/block) | Major | 2 |
 | Public API | Major | 2 |
